@@ -42,38 +42,32 @@ string line;
 
 //Single Room
 while(single1 >> room_no >> type){
+   if(ty==type){
    if(ty==1){
-    if(ty==type){
         cout <<room_no<<"\n";
         single_room++;
         a++;
     }
-    }
 //Double Room
     if(ty==2){
-    if(ty==type){
         double_room++;
         a++;
         cout <<room_no<<"\n";
     }
-    }
 //Family Room
     if(ty==3){
-    if(ty==type){
         family_room++;
         cout <<room_no<<"\n";
         a++;
-    }
+    
     }
 //King Size Room
     if(ty==4){
-    if(ty==type){
         king_size_room++;
         cout <<room_no<<"\n";
         a++;
     }
-    }
-
+   }
 }
 
 single1.close();
